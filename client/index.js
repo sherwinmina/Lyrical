@@ -11,7 +11,7 @@ import SongCreate from './components/SongCreate'
 const client = new ApolloClient({});
 
 const Root = () => {
-  return 
+  return (
     <ApolloProvider client={client}>
       <Router history={hashHistory}> 
         <Route path="/" component={App}>
@@ -20,6 +20,7 @@ const Root = () => {
         </Route> 
       </Router>
     </ApolloProvider>
+  );
 };
 
 ReactDOM.render(
