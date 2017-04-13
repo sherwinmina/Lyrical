@@ -12,7 +12,11 @@ class SongCreate extends Component {
   onSubmit(event){
     event.preventDefault();
 
-    console.log(this.props);
+    tis.props.mutate({
+       varibales: {
+        title: this.state.title
+      }
+    });
   }
 
   render () {
