@@ -9,7 +9,7 @@ class LyricList extends Component {
       optimisticResponse: {
         __typename: 'Mutation',
         likeLyric: {
-          id: id,
+          id,
           __typename: 'LyricType',
           likes: likes + 1
         }
